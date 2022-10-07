@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::훈화 말투 생성기::</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/echo.css">
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+    <h1 id="title-page">훈화 말투 생성기<span id="version">1.0</span></h1>
+
+    <fieldset id="echo-field">
+        <label class="echo-check">
+            <span class="title">말줄임표(⋯)</span>
+            <input type="checkbox" title="말줄임표" id="echo-check-ellipsis" checked/>
+            <span class="ic"></span>
+        </label>
+        <textarea id="echo-text" placeholder="여기에 텍스트를 입력하세요.">친애하는 학생 여러분 시간은 쉼 없이 흘러 벌써 겨울방학을 맞이하고 있습니다. 띄어쓰기 기준 낱말은 두 개 이상 써주세요.</textarea>
+        <button id="echo-btn-generate" title="생성">생성</button>
+    </fieldset>
+
+    <div id="echo-result-wrap">
+        <div id="echo-result" contenteditable="true"></div>
+        <button id="echo-btn-copy-result" title="복사">복사</button>
+        <div id="echo-tooltip">복사 완료!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;700&family=Outfit:wght@600;800&display=swap');
+:root{
+    --gap:20px;
+    --f-family:'Outfit','IBM Plex Sans KR','Pretendard',sans-serif;
+
+    --bg:#000;
+    --f-size-1:#fff;
+    --mint:rgb(105, 230, 213);
+    --orange:rgb(249, 140, 93);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+*:focus{outline:2px dashed var(--orange);}
+html{font-size:62.5%;}
+html,body{
+    width:100%;
+    font-family:var(--f-family);
+}
+body{
+    display:flex;flex-flow:column nowrap;
+    justify-content:flex-end; align-items:center;
+    gap:var(--gap);
+    min-height:100vh;
+    background:var(--bg); color:var(--f-size-1);
+    font-size:2.4rem;
+}
+label,button,select{cursor:pointer;}
+input,textarea{font-family:inherit;font-size:inherit;color:inherit;}
+fieldset{border:none;}
+legend{display:none;}
+
+/* 스크롤바 */
+::-webkit-scrollbar{
+    width:1.4rem;height:1.4rem;
+    background:#111;
+}
+::-webkit-scrollbar-thumb{
+    background:var(--mint); border-radius:50px;
+    box-shadow:inset 0 0 0 4px #111;
+}
+
+/*  */
+#title-page{
+    font-size:5rem;
+}
+#version{
+    display:inline-block; vertical-align:middle;
+    margin-left:.7em; padding:3px .6em;
+    background:teal;
+    border-radius:4px;
+    font-size:1.6rem; font-weight:normal;
+}
